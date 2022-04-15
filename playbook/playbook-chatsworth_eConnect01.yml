@@ -1,0 +1,24 @@
+---
+- name: Example of grabbing a sessionid Token
+  connection: local
+  hosts: localhost # or provide an inventory
+
+  # note: the ansible controller requires requests library to run the chatsworth_eConnect modules
+  # python3 -m pip install requests
+
+  collection:
+      - rzfeeser.chatsworth_eConnect
+
+  tasks:
+      # generate a login token
+      - name: Fetch login data
+        rzfeeser.chatsworth_eConnect.login:
+            password: qwerty
+            username: admin
+            ip: 192.168.70.20
+        register: results
+
+      # display the sessionid token (use this for all other operations)
+      - name: Display sessionid
+        debug:
+            var: results.sessionid
