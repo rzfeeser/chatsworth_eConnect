@@ -1,7 +1,7 @@
 # Ansible Collection - rzfeeser.chatsworth_eConnect
 This collection is for Ansible automation of the Chatsworth PDU eConnect.
 
-While leading a 5-day Ansible training event, I built this collection in response to a student's request to automate the Chatsworth PDU eConnect suite. They have a fairly well developed API, so writing the automation around it hasn't been to difficult. However, any and all feedback is appreciated.
+While leading a 5-day Ansible training event, I built this collection in response to a student's request to automate the Chatsworth PDU eConnect suite. Any and all feedback is appreciated.
 
 For Ansible training for yourself, or your enterprise, contact sales@alta3.com.
 
